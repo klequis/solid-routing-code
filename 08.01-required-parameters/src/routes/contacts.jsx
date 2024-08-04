@@ -1,12 +1,6 @@
-
-
 import FileDetails from '~/file-details.jsx'
 
-
-<FileDetails file="routes/" />
-
-
-export default function Index() {
+export default function Contacts() {
   return (
     <div class="component">
       <FileDetails file="routes/" />

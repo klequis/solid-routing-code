@@ -1,0 +1,12 @@
+
+
+import FileDetails from '~/file-details.jsx'
+
+<FileDetails file="routes/" />
+
+export default function Index() return (
+    <div class="component">
+      <FileDetails file="routes/" />
+    </div>
+  )
+}

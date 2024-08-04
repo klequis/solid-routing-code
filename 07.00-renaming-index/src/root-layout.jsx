@@ -3,7 +3,7 @@ import Nav from './nav.jsx'
 
 export default function Layout(props) {
   return (
-    <main class="component">
+    <main class="component root-layout">
       <div class="filename-lg">
         root-layout.jsx
       </div>
