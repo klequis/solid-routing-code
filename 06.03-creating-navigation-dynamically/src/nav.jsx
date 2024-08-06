@@ -1,14 +1,20 @@
-import { A } from "@solidjs/router";
-import { createSignal, For } from "solid-js";
+import { A } from '@solidjs/router'
+import { createSignal, For } from 'solid-js'
 
 // Only edit this file from here
 const buttonList = [
-  { href: "/", text: "/" },
-  { href: "/contacts", text: "/contacts" },
-  { href: "/products", text: "/products" },
-  { href: "/products/categories/keyboards", text: "/products/categories/keyboards" },
-  { href: "/products/categories/mice", text: "/products/categories/mice" },
-];
+  { href: '/', text: '/' },
+  { href: '/contacts', text: '/contacts' },
+  { href: '/products', text: '/products' },
+  {
+    href: '/products/categories/keyboards',
+    text: '/products/categories/keyboards',
+  },
+  {
+    href: '/products/categories/mice',
+    text: '/products/categories/mice',
+  },
+]
 // to here
 
 function Button(props) {
@@ -21,16 +27,21 @@ function Button(props) {
     >
       {props.children}
     </A>
-  );
+  )
 }
 
 export default function Nav() {
-  const [buttons, setButtons] = createSignal(buttonList);
+  const [buttons, setButtons] =
+    createSignal(buttonList)
   return (
     <nav>
       <For each={buttons()}>
-        {(button) => <Button href={button.href}>{button.text}</Button>}
+        {(button) => (
+          <Button href={button.href}>
+            {button.text}
+          </Button>
+        )}
       </For>
     </nav>
-  );
+  )
 }

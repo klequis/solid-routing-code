@@ -21,12 +21,6 @@ const buttonList = [
     href: '/division/a/b',
     text: '/division/a/b',
   },
-  { href: '/teams', text: '/teams' },
-  { href: '/teams/Gold', text: '/teams/Gold' },
-  {
-    href: '/teams/Gold/Jose',
-    text: '/teams/Gold/Jose',
-  },
 ]
 // to here
 

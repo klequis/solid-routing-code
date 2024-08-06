@@ -10,9 +10,7 @@ export default function App() {
         root={(props) => (
           <Suspense>{props.children}</Suspense>
         )}
-      >
-        
-      </Router>
+      ></Router>
     </>
   )
 }

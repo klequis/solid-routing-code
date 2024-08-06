@@ -9,6 +9,7 @@ code {
   background-color: #f8f9fa;
   padding: 0.2rem 0.4rem;
   border-radius: .25rem;
+  opacity: 80%;
 }
 
 h1 {
@@ -74,8 +75,16 @@ a:hover {
 }
 
 .filename {
-  font-weight: 500;
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  font-weight: 1000;
   font-size: 1.1rem;
+
+}
+
+div.filename:nth-child(2) {
+  margin-top: 5px;
 }
 
 .filename-lg {
